@@ -171,12 +171,23 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = form.querySelector('button[type="submit"] span');
   btn.textContent = 'Envoi en cours...';
-  setTimeout(() => {
-    form.reset();
-    btn.textContent = 'Envoyer le message';
-    success.classList.add('show');
-    setTimeout(() => success.classList.remove('show'), 5000);
-  }, 1200);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: new FormData(form),
+    headers: { 'Accept': 'application/json' }
+  }).then(res => {
+    if (res.ok) {
+      form.reset();
+      btn.textContent = 'Envoyer le message';
+      success.classList.add('show');
+      setTimeout(() => success.classList.remove('show'), 5000);
+    } else {
+      btn.textContent = 'Erreur — réessaie';
+    }
+  }).catch(() => {
+    btn.textContent = 'Erreur réseau';
+  });
 });
 
 // ---- PARALLAX HERO ----
