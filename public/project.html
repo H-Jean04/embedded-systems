@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet | Jean Houédougbé — Systèmes Embarqués & IoT</title>
+  <meta name="description" content="Détail du projet embarqué — Station Météo ou Pulvérisateur Agricole Intelligent par Jean Houédougbé." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/article.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <a href="index.html"><span class="brand-bracket">&lt;</span>Jean Dona<span class="brand-bracket">/&gt;</span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Accueil</a></li>
+      <li><a href="index.html#about">À propos</a></li>
+      <li><a href="index.html#projects" class="active-link">Projets</a></li>
+      <li><a href="index.html#skills">Compétences</a></li>
+      <li><a href="index.html#blog">Blog</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </nav>
+
+  <!-- PROJECT HERO -->
+  <header class="project-hero">
+    <div class="project-hero-bg"></div>
+    <div class="container">
+      <div class="article-breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <a href="index.html#projects">Projets</a>
+        <span>/</span>
+        <span>Station Météo Embarquée</span>
+      </div>
+      <div class="project-badges-top">
+        <span class="proj-badge-type">Projet académique</span>
+        <span class="proj-badge-status status-done">✅ Terminé</span>
+      </div>
+      <h1 class="project-hero-title">Station Météo Embarquée</h1>
+      <p class="project-hero-sub">
+        Système de collecte et transmission de données environnementales en temps réel, basé sur microcontrôleur STM32 avec affichage local et envoi distant via protocole UART/TCP.
+      </p>
+      <div class="project-hero-meta">
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Janvier 2025</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 3 semaines</span>
+        <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Solo</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- PROJECT MAIN -->
+  <main class="project-main">
+    <div class="container project-layout">
+
+      <!-- CONTENT -->
+      <div class="project-content">
+
+        <!-- Image principale / Galerie -->
+        <section class="proj-section">
+          <h2>Aperçu du projet</h2>
+          <div class="project-gallery">
+            <div class="gallery-main">
+              <div class="article-img-placeholder tall">
+                <div class="img-placeholder-inner">
+                  <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="rgba(0,229,255,0.4)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                  <span>Photo principale du projet<br/><small>Vue d'ensemble du montage</small></span>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-thumbs">
+              <div class="article-img-placeholder thumb">
+                <div class="img-placeholder-inner"><small>Schéma électrique</small></div>
+              </div>
+              <div class="article-img-placeholder thumb">
+                <div class="img-placeholder-inner"><small>PCB / Breadboard</small></div>
+              </div>
+              <div class="article-img-placeholder thumb">
+                <div class="img-placeholder-inner"><small>Interface / Affichage</small></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contexte -->
+        <section class="proj-section">
+          <h2>Contexte & Objectifs</h2>
+          <p>
+            Ce projet a été réalisé dans le cadre de ma formation en systèmes embarqués. L'objectif était de concevoir un système autonome capable de mesurer des grandeurs physiques environnementales (température, humidité, pression atmosphérique) et de les transmettre en temps réel à un système distant.
+          </p>
+          <p>
+            La contrainte principale était la <strong>faible consommation énergétique</strong> : le système devait pouvoir fonctionner sur batterie pendant plusieurs jours sans recharge, tout en maintenant une fréquence de mesure d'une fois par minute.
+          </p>
+
+          <div class="proj-objectives">
+            <div class="obj-item">
+              <div class="obj-icon">🎯</div>
+              <div>
+                <strong>Objectif principal</strong>
+                <p>Collecte et transmission de données météo en temps réel</p>
+              </div>
+            </div>
+            <div class="obj-item">
+              <div class="obj-icon">⚡</div>
+              <div>
+                <strong>Contrainte énergétique</strong>
+                <p>Autonomie batterie &gt; 72h en mode normal</p>
+              </div>
+            </div>
+            <div class="obj-item">
+              <div class="obj-icon">📡</div>
+              <div>
+                <strong>Communication</strong>
+                <p>Transmission UART vers module WiFi ESP8266</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Architecture -->
+        <section class="proj-section">
+          <h2>Architecture du système</h2>
+          <p>Le système est architecturé autour d'un STM32F103 comme unité centrale, interfacé avec plusieurs capteurs via I2C et SPI :</p>
+
+          <div class="architecture-diagram">
+            <div class="arch-node main-node">STM32F103<br/><small>Cortex-M3 @ 72MHz</small></div>
+            <div class="arch-connections">
+              <div class="arch-branch">
+                <div class="arch-proto">I2C</div>
+                <div class="arch-node">BME280<br/><small>Temp / Hum / Pression</small></div>
+              </div>
+              <div class="arch-branch">
+                <div class="arch-proto">SPI</div>
+                <div class="arch-node">Écran OLED<br/><small>SSD1306 128×64</small></div>
+              </div>
+              <div class="arch-branch">
+                <div class="arch-proto">UART</div>
+                <div class="arch-node">ESP8266<br/><small>Module WiFi</small></div>
+              </div>
+              <div class="arch-branch">
+                <div class="arch-proto">GPIO</div>
+                <div class="arch-node">LED + Bouton<br/><small>Indication d'état</small></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Code -->
+        <section class="proj-section">
+          <h2>Extrait de code</h2>
+          <p>Boucle principale de collecte et transmission des données :</p>
+          <div class="article-code">
+            <div class="code-header">
+              <span class="code-lang">C — Boucle principale</span>
+              <button class="code-copy" onclick="copyCode(this)">Copier</button>
+            </div>
+            <pre><code><span class="c-keyword">void</span> <span class="c-fn">app_main_loop</span>(<span class="c-keyword">void</span>) {
+    WeatherData data;
+
+    <span class="c-keyword">while</span> (<span class="c-num">1</span>) {
+        <span class="c-comment">// Lecture capteur BME280 via I2C</span>
+        BME280_ReadAll(&data.temperature,
+                       &data.humidity,
+                       &data.pressure);
+
+        <span class="c-comment">// Affichage OLED</span>
+        OLED_DisplayWeather(&data);
+
+        <span class="c-comment">// Transmission WiFi (JSON)</span>
+        <span class="c-keyword">char</span> payload[<span class="c-num">128</span>];
+        snprintf(payload, <span class="c-keyword">sizeof</span>(payload),
+            <span class="c-str">"{\"temp\":%.1f,\"hum\":%.1f,\"pres\":%.1f}"</span>,
+            data.temperature, data.humidity, data.pressure);
+
+        ESP8266_SendHTTP(SERVER_URL, payload);
+
+        <span class="c-comment">// Veille 60 secondes</span>
+        HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON,
+                               PWR_SLEEPENTRY_WFI);
+    }
+}</code></pre>
+          </div>
+        </section>
+
+        <!-- Vidéo démo -->
+        <section class="proj-section">
+          <h2>Démonstration</h2>
+          <p>Vidéo de démonstration du système en fonctionnement :</p>
+          <div class="article-video">
+            <div class="video-placeholder">
+              <div class="video-play-btn">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="var(--cyan)"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </div>
+              <p>Vidéo de démonstration</p>
+              <small>Insérez votre vidéo YouTube ou locale ici</small>
+            </div>
+          </div>
+        </section>
+
+        <!-- Résultats -->
+        <section class="proj-section">
+          <h2>Résultats & Métriques</h2>
+          <div class="results-grid">
+            <div class="result-card">
+              <div class="result-value cyan">±0.5°C</div>
+              <div class="result-label">Précision température</div>
+            </div>
+            <div class="result-card">
+              <div class="result-value cyan">±2%</div>
+              <div class="result-label">Précision humidité</div>
+            </div>
+            <div class="result-card">
+              <div class="result-value green">96h</div>
+              <div class="result-label">Autonomie batterie</div>
+            </div>
+            <div class="result-card">
+              <div class="result-value green">60s</div>
+              <div class="result-label">Intervalle de mesure</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Difficultés -->
+        <section class="proj-section">
+          <h2>Difficultés rencontrées</h2>
+          <div class="article-callout warning">
+            <div class="callout-icon">⚠️</div>
+            <div>
+              <strong>Problème de synchronisation I2C</strong>
+              <p>Des conflits d'adresse I2C entre le BME280 et l'écran OLED (même bus) ont nécessité une gestion fine du timing et l'ajout de résistances de pull-up adaptées (4.7kΩ).</p>
+            </div>
+          </div>
+          <div class="article-callout info">
+            <div class="callout-icon">💡</div>
+            <div>
+              <strong>Solution apportée</strong>
+              <p>Implémentation d'un arbitrage logiciel sur le bus I2C avec vérification d'état avant chaque transaction, et séquencement strict des lectures capteurs.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Ce que j'ai appris -->
+        <section class="proj-section">
+          <h2>Ce que j'ai appris</h2>
+          <ul class="article-list">
+            <li>Maîtrise du protocole I2C multi-esclaves sur STM32 HAL</li>
+            <li>Gestion des modes de veille pour l'optimisation énergétique</li>
+            <li>Communication AT commands avec module ESP8266</li>
+            <li>Débogage bas niveau avec oscilloscope (signaux I2C et UART)</li>
+            <li>Formatage et transmission de données JSON depuis un microcontrôleur</li>
+          </ul>
+        </section>
+
+        <!-- Améliorations -->
+        <section class="proj-section">
+          <h2>Améliorations futures</h2>
+          <div class="improvements-list">
+            <div class="improve-item">
+              <span class="improve-status todo">À faire</span>
+              <span>Ajout d'un panneau solaire pour recharge autonome</span>
+            </div>
+            <div class="improve-item">
+              <span class="improve-status todo">À faire</span>
+              <span>Dashboard web temps réel avec historique des données</span>
+            </div>
+            <div class="improve-item">
+              <span class="improve-status inprogress">En cours</span>
+              <span>Migration vers STM32L4 pour réduire la consommation</span>
+            </div>
+            <div class="improve-item">
+              <span class="improve-status done">Fait</span>
+              <span>Calibration du capteur BME280 par rapport à une référence</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Nav projets -->
+        <div class="article-nav-bottom">
+          <a href="#" class="art-nav-btn prev">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            <div>
+              <span>Projet précédent</span>
+              <strong>—</strong>
+            </div>
+          </a>
+          <a href="#" class="art-nav-btn next">
+            <div>
+              <span>Projet suivant</span>
+              <strong>Pulvérisateur Agricole Intelligent</strong>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="article-sidebar">
+
+        <!-- Infos projet -->
+        <div class="sidebar-card">
+          <h4>Informations</h4>
+          <div class="proj-info-list">
+            <div class="proj-info-item">
+              <span class="proj-info-label">Statut</span>
+              <span class="proj-badge-status status-done">✅ Terminé</span>
+            </div>
+            <div class="proj-info-item">
+              <span class="proj-info-label">Durée</span>
+              <span>3 semaines</span>
+            </div>
+            <div class="proj-info-item">
+              <span class="proj-info-label">Contexte</span>
+              <span>Projet académique</span>
+            </div>
+            <div class="proj-info-item">
+              <span class="proj-info-label">Équipe</span>
+              <span>Solo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stack technique -->
+        <div class="sidebar-card">
+          <h4>Stack technique</h4>
+          <div class="proj-stack">
+            <span class="tag">STM32F103</span>
+            <span class="tag">C / HAL</span>
+            <span class="tag">I2C</span>
+            <span class="tag">SPI</span>
+            <span class="tag">UART</span>
+            <span class="tag">BME280</span>
+            <span class="tag">SSD1306</span>
+            <span class="tag">ESP8266</span>
+            <span class="tag">STM32CubeIDE</span>
+          </div>
+        </div>
+
+        <!-- Liens -->
+        <div class="sidebar-card">
+          <h4>Liens du projet</h4>
+          <div class="proj-links">
+            <a href="#" class="proj-link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Code source GitHub
+            </a>
+            <a href="#" class="proj-link-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Rapport PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Autres projets -->
+        <div class="sidebar-card">
+          <h4>Autres projets</h4>
+          <div class="related-articles">
+            <a href="#" class="related-item">
+              <div class="related-cat">Hackathon 🥈</div>
+              <span>Pulvérisateur Agricole Intelligent</span>
+            </a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="nav-brand"><span class="brand-bracket">&lt;</span>JD<span class="brand-bracket">/&gt;</span></div>
+          <p>Étudiant ingénieur — Systèmes Embarqués & IoT</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html#home">Accueil</a>
+          <a href="index.html#projects">Projets</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jean Dona — Embedded Systems & IoT Engineer</p>
+        <p class="footer-keywords">systèmes embarqués · firmware · IoT · STM32</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/article.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

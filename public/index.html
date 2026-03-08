@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean Dona | Ingénieur Systèmes Embarqués & IoT</title>
+  <meta name="description" content="Portfolio de Jean Dona HOUEDOUGBE, étudiant ingénieur spécialisé en systèmes embarqués, firmware et IoT. STM32, Arduino, C/C++, protocoles embarqués." />
+  <meta name="keywords" content="systèmes embarqués, firmware, IoT, embedded systems, microcontrollers, STM32, embedded engineer, Arduino, C, C++, capteurs" />
+  <meta name="author" content="Jean Dona HOUEDOUGBE" />
+  <meta property="og:title" content="Jean Dona HOUEDOUGBE | Embedded Systems & IoT Engineer" />
+  <meta property="og:description" content="Étudiant ingénieur passionné par les systèmes embarqués, firmware et IoT." />
+  <meta property="og:type" content="website" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/article.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="brand-bracket">&lt;</span>Jean Dona<span class="brand-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#skills">Compétences</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <canvas id="circuit-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <img src="images/photo.png" alt="Jean Dona - Ingénieur Systèmes Embarqués" />
+      </div>
+      <div class="hero-tag">
+        <span class="dot pulse"></span> Disponible pour stage / alternance
+      </div>
+      <h1 class="hero-title">
+        Étudiant Ingénieur<br/>
+        <span class="gradient-text">Systèmes Embarqués</span><br/>
+        <span class="outline-text">& IoT</span>
+      </h1>
+      <p class="hero-sub">
+        Conception de solutions intelligentes intégrant microcontrôleurs,<br class="br-desk"/>
+        capteurs et communication embarquée.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          <span>Voir mes projets</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
+        <button class="btn btn-motiv" id="btn-motiv">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          Mes motivations
+        </button>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-n">2+</span><span class="stat-l">Projets embarqués</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">4</span><span class="stat-l">Langages maîtrisés</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-n">🥈</span><span class="stat-l">Hackathon</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span></span><!--Scroll-->
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label">01 — À propos</div>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-wrap">
+            <div class="about-card">
+              <div class="chip-visual">
+                <div class="chip-body">
+                  <div class="chip-pins left">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                  <div class="chip-core">
+                    <div class="chip-label">STM32</div>
+                    <div class="chip-sub">Cortex-M4</div>
+                  </div>
+                  <div class="chip-pins right">
+                    <span></span><span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="about-badges">
+                <span class="badge">Firmware Dev</span>
+                <span class="badge">IoT</span>
+                <span class="badge">Hardware</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h2>Qui suis-je ?</h2>
+          <p>
+            Je suis étudiant ingénieur passionné par la conception de <strong>systèmes embarqués</strong> et d'objets connectés.
+            Je travaille sur le développement de <strong>firmware</strong>, l'intégration de capteurs et la communication entre systèmes.
+          </p>
+          <p>
+            Mon objectif : créer des solutions embarquées robustes, efficaces et intelligentes qui répondent à des problématiques réelles — de l'agriculture connectée à la météorologie embarquée.
+          </p>
+          <div class="skills-tags">
+            <span class="tag">C / C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Rust</span>
+            <span class="tag">STM32</span>
+            <span class="tag">Arduino</span>
+            <span class="tag">SPI / I2C / UART</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Électronique</span>
+            <span class="tag">IoT</span>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-20">Me recruter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label">02 — Projets</div>
+      <h2 class="section-title">Ce que j'ai construit</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-delay="0">
+          <div class="project-img">
+            <div class="project-img-bg weather-bg">
+              <div class="weather-icon">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="30" r="14" fill="#00e5ff" opacity="0.9"/>
+                  <path d="M10 58c0-11 8-18 18-18h24c8 0 14 6 14 14H10z" fill="#1a2744" stroke="#00e5ff" stroke-width="1.5"/>
+                  <line x1="40" y1="8" x2="40" y2="2" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="40" y1="58" x2="40" y2="64" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="18" y1="30" x2="12" y2="30" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+                  <line x1="68" y1="30" x2="62" y2="30" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+                  <circle cx="56" cy="56" r="2" fill="#00e5ff" opacity="0.7"/>
+                  <circle cx="48" cy="64" r="2" fill="#00e5ff" opacity="0.5"/>
+                  <circle cx="32" cy="64" r="2" fill="#00e5ff" opacity="0.5"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-tag-top">Projet académique</div>
+          </div>
+          <div class="project-body">
+            <h3>Station Météo Embarquée</h3>
+            <p>Système basé sur microcontrôleur permettant la collecte et la transmission de données météorologiques via capteurs (température, humidité, pression).</p>
+            <div class="project-tech">
+              <span>STM32</span>
+              <span>C</span>
+              <span>I2C</span>
+              <span>UART</span>
+              <span>BME280</span>
+            </div>
+            <a href="project.html" class="btn-project">
+              Voir le projet
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card featured" data-delay="150">
+          <div class="project-img">
+            <div class="project-img-bg agri-bg">
+              <div class="weather-icon">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M40 70 C40 70 15 50 15 30 C15 18 26 10 40 10 C54 10 65 18 65 30 C65 50 40 70 40 70Z" fill="#0a2e1a" stroke="#00ff88" stroke-width="1.5"/>
+                  <path d="M40 45 C40 45 28 36 28 26 C28 20 33 16 40 16 C47 16 52 20 52 26 C52 36 40 45 40 45Z" fill="#00ff88" opacity="0.25"/>
+                  <line x1="40" y1="70" x2="40" y2="45" stroke="#00ff88" stroke-width="2"/>
+                  <circle cx="40" cy="30" r="6" fill="#00ff88" opacity="0.8"/>
+                  <circle cx="22" cy="55" r="3" fill="#00ff88" opacity="0.5"/>
+                  <circle cx="58" cy="55" r="3" fill="#00ff88" opacity="0.5"/>
+                  <path d="M20 68 Q30 60 40 70 Q50 60 60 68" stroke="#00ff88" stroke-width="1.5" fill="none" opacity="0.4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="project-tag-top hackathon">🥈 Hackathon — 2e place</div>
+          </div>
+          <div class="project-body">
+            <h3>Pulvérisateur Agricole Intelligent</h3>
+            <p>Système embarqué combinant capteurs et automatisation pour optimiser la pulvérisation agricole. Projet réalisé lors d'un hackathon — <strong>2e place</strong>.</p>
+            <div class="project-tech">
+              <span>Arduino</span>
+              <span>C++</span>
+              <span>Capteurs</span>
+              <span>SPI</span>
+              <span>Automatisation</span>
+            </div>
+            <a href="#" class="btn-project">
+              Voir le projet
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-label">03 — Compétences</div>
+      <h2 class="section-title">Stack technique</h2>
+      <div class="skills-layout">
+        <div class="skills-bars">
+          <div class="skill-item" data-value="88">
+            <div class="skill-info">
+              <span class="skill-name">Firmware embarqué</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 88%"></div></div>
+          </div>
+          <div class="skill-item" data-value="85">
+            <div class="skill-info">
+              <span class="skill-name">Programmation C / C++</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 85%"></div></div>
+          </div>
+          <div class="skill-item" data-value="80">
+            <div class="skill-info">
+              <span class="skill-name">IoT & Communication sans fil</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 80%"></div></div>
+          </div>
+          <div class="skill-item" data-value="78">
+            <div class="skill-info">
+              <span class="skill-name">Protocoles embarqués (SPI, I2C, UART)</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 78%"></div></div>
+          </div>
+          <div class="skill-item" data-value="72">
+            <div class="skill-info">
+              <span class="skill-name">Conception électronique</span>
+              <span class="skill-pct">72%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 72%"></div></div>
+          </div>
+          <div class="skill-item" data-value="70">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 70%"></div></div>
+          </div>
+          <div class="skill-item" data-value="60">
+            <div class="skill-info">
+              <span class="skill-name">Rust</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 60%"></div></div>
+          </div>
+        </div>
+        <div class="skills-icons-grid">
+          <div class="skill-icon-card"><div class="sic-icon">⚙️</div><div class="sic-label">STM32</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">🔌</div><div class="sic-label">Arduino</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">📡</div><div class="sic-label">I2C / SPI</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">🌐</div><div class="sic-label">TCP/IP</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">🔧</div><div class="sic-label">UART</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">💡</div><div class="sic-label">Capteurs</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">🖥️</div><div class="sic-label">C / C++</div></div>
+          <div class="skill-icon-card"><div class="sic-icon">🐍</div><div class="sic-label">Python</div></div>
+        </div>
+        <div class="cv-download">
+          <a href="cv_Jean_Dona.pdf" download class="btn btn-cv">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Télécharger mon CV</span>
+          </a>
+          <p class="cv-hint">Format PDF · Mis à jour Mars 2026</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog-section" id="blog">
+    <div class="container">
+      <div class="section-label">04 — Blog & Réflexions</div>
+      <h2 class="section-title">Mes articles techniques</h2>
+      <div class="blog-carousel-wrap">
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="blog-prev" aria-label="Précédent">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+          </button>
+          <button class="carousel-btn" id="blog-next" aria-label="Suivant">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <div class="blog-carousel" id="blog-carousel">
+          <article class="blog-card">
+            <div class="blog-cat">Optimisation</div>
+            <h3>Pourquoi l'optimisation énergétique en embarqué ne se résume pas au hardware</h3>
+            <p>Le firmware joue un rôle souvent sous-estimé dans la consommation d'énergie. Explorons les techniques logicielles qui font la différence.</p>
+            <a href="article.html" class="blog-link">Lire l'article →</a>
+          </article>
+          <article class="blog-card">
+            <div class="blog-cat">Firmware</div>
+            <h3>Firmware robuste : erreurs fréquentes chez les débutants</h3>
+            <p>De la gestion des interruptions à la corruption mémoire — les pièges classiques du firmware et comment les éviter dès le départ.</p>
+            <a href="article.html" class="blog-link">Lire l'article →</a>
+          </article>
+          <article class="blog-card">
+            <div class="blog-cat">Systèmes Temps Réel</div>
+            <h3>Temps réel vs performance : faut-il vraiment choisir ?</h3>
+            <p>Analyse des compromis entre déterminisme et performance dans les systèmes embarqués avec ou sans RTOS.</p>
+            <a href="article.html" class="blog-link">Lire l'article →</a>
+          </article>
+          <article class="blog-card">
+            <div class="blog-cat">IoT</div>
+            <h3>MQTT vs HTTP pour l'IoT embarqué : quel protocole choisir ?</h3>
+            <p>Comparaison technique des deux protocoles les plus utilisés en IoT — consommation, latence, complexité d'implémentation.</p>
+            <a href="article.html" class="blog-link">Lire l'article →</a>
+          </article>
+          <article class="blog-card">
+            <div class="blog-cat">Débogage</div>
+            <h3>Déboguer sans debugger : techniques de diagnostic bas niveau</h3>
+            <p>Quand le JTAG n'est pas disponible, comment retrouver un bug firmware avec seulement une LED et un port UART.</p>
+            <a href="article.html" class="blog-link">Lire l'article →</a>
+          </article>
+          <article class="blog-card">
+            <div class="blog-cat">Interruptions</div>
+            <h3>Maîtriser les interruptions sur STM32 : pièges et bonnes pratiques</h3>
+            <p>NVIC, priorités, ISR courtes, variables volatiles — tout ce que les débutants ratent avec les interruptions STM32.</p>
+            <a href="article.html" class="blog-link">Lire l'article →</a>
+          </article>
+        </div>
+        <div class="carousel-dots" id="carousel-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">05 — Contact</div>
+      <h2 class="section-title">Travaillons ensemble</h2>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <p>Je suis à la recherche d'un <strong>stage ou d'une alternance</strong> dans le domaine des systèmes embarqués, firmware ou IoT. N'hésitez pas à me contacter.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <a href="mailto:jeanhouedougbe@gmail.com">jeanhouedougbe@gmail.com</a>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/houedougbe-jean-dona" class="social-btn" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://github.com/H-Jean04" class="social-btn" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mgonvknj" method="POST">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="object">Objet</label>
+            <input type="object" id="object" name="object" placeholder="Objet" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Envoyer le message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">✅ Message envoyé ! Je vous répondrai rapidement.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-bracket">&lt;</span>JD<span class="brand-bracket">/&gt;</span>
+          <p>Étudiant ingénieur — Systèmes Embarqués & IoT</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Accueil</a>
+          <a href="#projects">Projets</a>
+          <a href="#skills">Compétences</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/houedougbe-jean-dona" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://github.com/H-Jean04" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jean Dona — Embedded Systems & IoT Engineer</p>
+        <p class="footer-keywords">systèmes embarqués · firmware · IoT · STM32 · microcontrollers</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALE MOTIVATIONS -->
+<div class="motiv-overlay" id="motiv-overlay">
+  <div class="motiv-modal">
+    <button class="motiv-close" id="motiv-close" aria-label="Fermer">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <div class="motiv-tag">💡 Ce qui me drive</div>
+    <h2>Pourquoi les systèmes embarqués ?</h2>
+    <div class="motiv-body">
+      <p>
+        Depuis que j'ai allumé ma première LED avec un Arduino, j'ai compris que le code pouvait 
+        avoir un impact <strong>physique et concret</strong> sur le monde réel. Ce lien direct entre 
+        le logiciel et le matériel est ce qui me passionne dans les systèmes embarqués.
+      </p>
+      <p>
+        Je suis motivé par les <strong>contraintes réelles</strong> de ce domaine : optimiser chaque 
+        octet de mémoire, chaque cycle d'horloge, chaque microampère consommé. C'est une discipline 
+        qui demande rigueur, créativité et une compréhension profonde du matériel.
+      </p>
+      <p>
+        Mon objectif est de contribuer à des projets qui ont du sens — que ce soit dans 
+        l'<strong>agriculture connectée</strong>, la <strong>santé embarquée</strong> ou les 
+        <strong>systèmes industriels</strong> — en apportant des solutions firmware robustes et efficientes.
+      </p>
+      <div class="motiv-values">
+        <div class="motiv-value"><span>⚡</span> Performance</div>
+        <div class="motiv-value"><span>🔧</span> Rigueur technique</div>
+        <div class="motiv-value"><span>🌱</span> Impact concret</div>
+        <div class="motiv-value"><span>🚀</span> Innovation</div>
+      </div>
+    </div>
+    <a href="#contact" class="btn btn-primary motiv-cta" id="motiv-cta">
+      Me recruter
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+   <script src="js/script.js"></script>
+</body>
+</html>
