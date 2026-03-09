@@ -332,15 +332,18 @@ img { max-width: 100%; }
 }
 
 /* ---- FIX MODALE MOBILE ---- */
+/* Desktop ET mobile */
+.motiv-modal {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
 @media (max-width: 768px) {
   .motiv-overlay {
     align-items: flex-end;
     padding: 0;
   }
-
   .motiv-modal {
-    max-height: 85vh;
-    overflow-y: auto;
     border-radius: 20px 20px 0 0;
     padding: 32px 24px;
     width: 100%;
@@ -1066,6 +1069,38 @@ section { padding: 100px 0; }
   border-color: var(--green);
   transform: translateY(-2px);
   box-shadow: 0 0 24px rgba(0, 255, 136, 0.15);
+}
+
+/* ---- LISTE MOTIVATIONS ---- */
+.motiv-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.motiv-list li {
+  font-size: 0.88rem;
+  color: #8facc8;
+  padding: 8px 12px 8px 28px;
+  position: relative;
+  background: rgba(0,229,255,0.03);
+  border-left: 2px solid rgba(0,229,255,0.2);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+}
+.motiv-list li::before {
+  content: '▸';
+  position: absolute;
+  left: 10px;
+  color: var(--cyan);
+  font-size: 0.75rem;
+}
+
+.motiv-body p,
+.motiv-list li {
+  text-align: justify;
 }
 
 /* ---- MODALE ---- */
