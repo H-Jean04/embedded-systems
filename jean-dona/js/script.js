@@ -279,9 +279,10 @@ if (window.innerWidth > 768) {
 const tagEl = document.querySelector('.hero-tag');
 if (tagEl) {
   const texts = [
-    'Disponible pour alternance',
+    'Disponible pour un stage',
     'Open to embedded systems roles',
-    'Octobre 2026 - Septembre 2029',
+    'Disponible dès janvier 2027',
+    'Electronique et prototypage',
     'Systèmes embarqués & IoT',
     'Architecture logicielle & hardware embarquée',
     'Contraintes temps réel & optimisation',
